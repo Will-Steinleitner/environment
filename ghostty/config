@@ -1,0 +1,9 @@
+font-size = 16
+theme = Catppuccin Latte
+font-family = "JetBrainsMono Nerd Font"
+background = ffffff
+foreground = 1f2937 
+background-opacity = 0.85
+background-blur-radius = 15 
+cursor-color = 1a1a1a
+cursor-style = block
