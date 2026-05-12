@@ -1,13 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your Oh My Zsh installation.
+# Exports
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:$(go env GOPATH)/bin
-eval "$(starship init zsh)"
-# Folder Color
 export LS_COLORS="di=38;5;68"
 
+# Eval
+eval "$(starship init zsh)"
+
+# Load Oh-My-Zsh
+source $ZSH/oh-my-zsh.sh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -77,8 +80,6 @@ ZSH_THEME=""
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,4 +109,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #alias ls="eza --icons --group-directories-first"
-alias ls="eza --icons --group-directories-first --color=always"
+source ~/.dotfiles/zsh/aliases.zsh
