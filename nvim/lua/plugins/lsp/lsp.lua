@@ -1,18 +1,30 @@
 return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
+
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/nvim-cmp",
   },
 
   config = function()
-    -- enable autocompletion
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local map = vim.keymap.set
 
     vim.lsp.config("gopls", {
       capabilities = capabilities,
+
+      on_attach = function(_, bufnr)
+        vim.api.nvim_create_autocmd("BufWritePre", {
+          buffer = bufnr,
+          callback = function()
+            vim.lsp.buf.code_action({
+              context = { only = { "source.organizeImports" } },
+              apply = true,
+            })
+          end,
+        })
+      end,
     })
 
     vim.lsp.config("html", {

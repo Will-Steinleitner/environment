@@ -9,7 +9,6 @@ return {
 
   config = function()
     local bufferline = require("bufferline")
-    local map = vim.keymap.set -- alias for vim.keymap.set
 
     bufferline.setup({
       options = {
