@@ -1,0 +1,17 @@
+[user]
+	name = will-steinleitner
+	email = w.steinleitner@icloud.com
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    side-by-side = true
+    navigate = true  # use n and N to move between diff sections
+    light = true      # or light = true, or omit for auto-detection
+
+[merge]
+    conflictStyle = zdiff3
