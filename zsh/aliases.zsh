@@ -3,9 +3,12 @@ alias gs='git status'
 alias ga='git add '
 alias gp='git push '
 alias gb='git branch '
-alias gc='git checkout '
+alias gc='git commit --verbose '
+alias gca='git commit --amend --verbose '
+alias gco='git checkout '
 alias grh='git reset --hard HEAD'
 alias gd='git diff'
+alias gl='git log --oneline --decorate --graph'
 
 # Terminal
 alias q='exit'

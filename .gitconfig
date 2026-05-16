@@ -3,7 +3,7 @@
 	email = w.steinleitner@icloud.com
 
 [core]
-    pager = delta
+	pager = delta
 
 [interactive]
     diffFilter = delta --color-only

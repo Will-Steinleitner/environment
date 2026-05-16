@@ -31,7 +31,8 @@ return {
 
       view = {
         width = 35,
-        relativenumber = true,
+        relativenumber = false,
+        number = false,
       },
 
       renderer = {
