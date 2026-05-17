@@ -3,8 +3,9 @@
 
 # Exports
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:$(go env GOPATH)/bin
-export LS_COLORS="di=38;5;68"
+export PATH=$PATH:$(go env GOPATH)/bin # Go PATH
+export LS_COLORS="di=38;5;68" # directory color 
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH" # Java (Homebrew OpenJDK)
 
 # Eval
 eval "$(starship init zsh)"
