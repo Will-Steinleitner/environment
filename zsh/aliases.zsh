@@ -18,3 +18,9 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # List
 alias ls="eza --icons --group-directories-first --color=always"
+
+# Services
+alias bsl='brew services list'
+alias bss='brew services start'
+alias bst='brew services stop'
+alias bsr='brew services restart'
