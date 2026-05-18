@@ -7,3 +7,7 @@ background-opacity = 0.85
 background-blur-radius = 15 
 cursor-color = 1a1a1a
 cursor-style = block
+
+# keybinds
+keybind = shift+j=previous_tab
+keybind = shift+k=next_tab
